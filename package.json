@@ -1,0 +1,27 @@
+{
+  "name": "swd500-ae2",
+  "version": "1.0.0",
+  "description": "![Dogue Logo](images/dogue.png \"Dogue Logo\")",
+  "main": "index.js",
+  "dependencies": {
+    "sass-watch": "^0.1.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.23.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch  sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasharwood/SWD500-AE1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasharwood/SWD500-AE1/issues"
+  },
+  "homepage": "https://github.com/jasharwood/SWD500-AE1#readme"
+}
