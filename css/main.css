@@ -184,8 +184,7 @@
   z-index: 2;
 }
 #sidebar ul {
-  margin: 0;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
   padding-left: 0.5rem;
 }
 #sidebar ul .shop {
@@ -208,7 +207,7 @@
 #sidebar ul li {
   color: white;
   list-style: none;
-  padding: 0 0.2rem;
+  padding: 0.4rem 0.2rem;
 }
 #sidebar ul li #home-link {
   font-family: "Playfair Display", serif;
@@ -227,11 +226,15 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 #sidebar ul li a:hover {
   text-decoration: underline;
+}
+#sidebar ul li:hover {
+  background: #202020;
 }
 
 #sidebar.active {
@@ -352,7 +355,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   font-size: 1.4rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 #emailId {
@@ -812,7 +815,7 @@ body {
 
 /* Section 1 */
 .d-section-1 {
-  margin: 5rem auto;
+  margin: 3rem auto;
   height: auto;
   width: 80%;
   background: white;
@@ -858,7 +861,7 @@ body {
 
 /* Section 2 */
 .d-section-2 {
-  margin: 5rem auto;
+  margin: 3rem auto;
   height: auto;
   width: 80%;
   background: white;
@@ -903,7 +906,7 @@ body {
 
 /* Section 3 */
 .d-section-3 {
-  margin: 5rem auto;
+  margin: 3rem auto;
   height: auto;
   width: 80%;
   height: auto;
@@ -950,7 +953,7 @@ body {
 
 /* Section 4 */
 .d-section-4 {
-  margin: 5rem auto;
+  margin: 3rem auto;
   height: auto;
   width: 80%;
   background: white;
@@ -1677,7 +1680,7 @@ body {
   width: 90%;
   background: white;
   text-align: center;
-  margin: 2rem auto;
+  margin: 0.5rem auto 2rem auto;
   padding: 1rem 0;
   /* Title */
   /* Buttons */

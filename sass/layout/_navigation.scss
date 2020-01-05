@@ -63,8 +63,7 @@
     
 
     ul {
-        margin: 0;
-        margin-top: .5rem;
+        margin: .5rem 0 1rem 0;
         padding-left: .5rem;
 
         .shop {
@@ -89,7 +88,7 @@
         li {
             color: white;
             list-style: none;
-            padding: 0 .2rem;
+            padding: .4rem .2rem;
             
 
             #home-link {
@@ -102,13 +101,18 @@
                 text-decoration: none;
                 color: white;
                 @include paragraph;
-                font-size: .9rem;
+                font-size: .8rem;
                 font-weight: 400;
+                letter-spacing: .1rem;
             }
 
             a:hover {
                 text-decoration: underline;
             }
+        }
+
+        li:hover {
+            background: rgb(32, 32, 32);
         }
     }
     
