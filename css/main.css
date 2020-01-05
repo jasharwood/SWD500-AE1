@@ -176,7 +176,7 @@
   padding-left: 0.5rem;
   position: fixed;
   width: 220px;
-  height: 60%;
+  height: auto;
   background: black;
   right: -220px;
   top: 56px;
@@ -1613,7 +1613,7 @@ body {
   .p-container .left .slides {
     justify-content: center;
     margin: 0 auto;
-    height: 60vh;
+    height: 28rem;
     width: 100%;
     text-align: center;
   }
@@ -1632,6 +1632,7 @@ body {
     justify-content: space-around;
     margin: 1rem auto 1rem auto;
     width: 100%;
+    height: auto;
   }
   .p-container .left .thumbnails li {
     margin: 0 auto;
@@ -1661,6 +1662,10 @@ body {
   }
   .options .select label select {
     margin: 1rem 0;
+  }
+
+  .slides {
+    height: 20rem;
   }
 }
 .a-container {

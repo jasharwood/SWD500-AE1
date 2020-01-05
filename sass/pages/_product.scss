@@ -355,7 +355,7 @@
             .slides {
                 justify-content: center;
                 margin: 0 auto;
-                height: 60vh;
+                height: 28rem;
                 width: 100%;
                 text-align: center;
 
@@ -377,6 +377,7 @@
                 justify-content: space-around;
                 margin: 1rem auto 1rem auto;
                 width: 100%;
+                height: auto;
 
                 li {
                     margin: 0 auto;
@@ -400,20 +401,35 @@
 /* Mobile */
 
 @media only screen and (max-width: 340px) {
-    .options {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto 2rem auto;
 
-        .select {
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
+
+    .p-container {
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto 2rem auto;
     
-            label {
-                select {
-                    margin: 1rem 0;
+            .select {
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+        
+                label {
+                    select {
+                        margin: 1rem 0;
+                    }
+                }
+            }
+        }
+
+        .left {
+            .slides {
+                height: 10rem;
+
+                img {
+                    width: 50%;
                 }
             }
         }
