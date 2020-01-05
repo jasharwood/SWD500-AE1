@@ -7,26 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dogue</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/main.js"></script>
 </head>
 
 <body>
 
     <!-- Container -->
 
-    <div class="container">
+    <div class="home-container">
+
+        <!-- Pop Up -->
+        <div id="popUpMain">
+            <div id="popUp">
+                <h1 id="newsHeading"> Subscribe to our Mailing List & get 10% off your first order!</h1>
+                <input type="email" name="" id="emailId" placeholder="user@email.com" required><br>
+                <button class="main-button" class="submitId" onclick="thankyouMessage()">Subscribe</button>
+                <button class="main-button" class="submitId" onclick="closePopUp()">No Thanks</button>
+            </div>
+        </div>
+
+        <!-- Thankyou Message -->
+
+        <div id="thankYouMain">
+            <div id="thankYou">
+                <h1 id="newsHeading"> Thankyou! You are now subscribed to our mailing list.</h1>
+                <button class="main-button" class="submitId" onclick="closeMessage()">Close</button>
+            </div>
+        </div>
 
         <!-- Navigation -->
         <nav class="nav">
             <a href="index.html">DOGUE.</a>
             <ul>
                 <li class="cart-button">
-                    <a href="#"><img src="images/cart.png" alt="Shopping cart icon"></a>
+                    <a href="index.html"><img src="images/cart.png" alt="Shopping cart icon"></a>
                 </li>
-                <li class="menu-button">
+                <li class="menu-button" onclick="toggleSidebar()">
                     <a href="#"><img src="images/menu.png" alt="Hamburger menu icon"></a>
                 </li>
             </ul>
         </nav>
+
+        <div id="sidebar">
+            <ul>
+                <li><a href="index.html" id="home-link">DOGUE.</a></li>
+                <div class="shop">
+                    <p>SHOP</p>
+                    <li><a href="#">● Shop all</a></li>
+                    <li><a href="#">● New in</a></li>
+                    <li><a href="#">● Outerwear</a></li>
+                    <li><a href="pages/accessories.html">● Accessories</a></li>
+                    <li><a href="pages/product.html">● Product of the month</a></li>
+                </div>
+
+                <div class="more">
+                    <p>MORE</p>
+                    <li><a href="pages/designers.html">● Meet the designers</a></li>
+                    <li><a href="pages/blog.html">● Read our blog</a></li>
+                </div>
+
+                <div class="contact">
+                    <p>CONTACT</p>
+                    <li><a href="pages/contact.html">● Get in touch</a></li>
+                </div>
+            </ul>
+        </div>
 
         <!-- Header -->
         <header class="header">
@@ -36,7 +81,7 @@
                     <h4>Luxurious designer clothing for your furry pals.</h4>
                 </div>
                 <div class="button-area">
-                    <button class="main-button">shop new in</button>
+                    <a href=#><button class="main-button">shop new in</button></a>
                 </div>
             </div>
             <div class="header-img">
@@ -77,7 +122,7 @@
                         colder months in total warmth & comfort.</h4>
                 </div>
                 <div class="button-area">
-                    <button type="button" class="main-button">shop outerwear</button>
+                    <a href=#><button class="main-button">shop outerwear</button></a>
                 </div>
             </div>
             <div class="section-2-img">
@@ -129,7 +174,7 @@
                 <a href="#">Shop All</a>
                 <a href="#">New In</a>
                 <a href="#">About</a>
-                <a href="#">Blog</a>
+                <a href="pages/blog.html">Blog</a>
             </div>
             <div class="footer-2">
                 <p class="title">
@@ -145,7 +190,7 @@
                     Contact Us
                 </p>
                 <a href="#">24/7 Chat Support</a>
-                <a href="#">contact @ dogue.com</a>
+                <a href="pages/contact.html">contact @ dogue.com</a>
                 <a href="#">+44 1903 764893</a>
             </div>
         </div>
@@ -156,7 +201,6 @@
     </div>
 
     <!-- Container Ends -->
-
 </body>
 
 </html>
