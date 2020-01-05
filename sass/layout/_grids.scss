@@ -1,0 +1,110 @@
+/* Global styles */ 
+
+body {
+    background-color: $background;
+    color: black;
+    font-size: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+/* Home Grid System */
+
+.home-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1"
+    "s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+/* Designer Grid System */
+
+.designer-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "heading heading heading heading heading heading heading heading heading heading heading heading"
+    "ds1 ds1 ds1 ds1 ds1 ds1 ds1 ds1 ds1 ds1 ds1 ds1"
+    "ds2 ds2 ds2 ds2 ds2 ds2 ds2 ds2 ds2 ds2 ds2 ds2"
+    "ds3 ds3 ds3 ds3 ds3 ds3 ds3 ds3 ds3 ds3 ds3 ds3"
+    "ds4 ds4 ds4 ds4 ds4 ds4 ds4 ds4 ds4 ds4 ds4 ds4"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+/* Blog Grid System */
+
+.blog-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "bp1 bp1 bp1 bp1 bp1 bp1 bp1 bp1 bp1 bp1 bp1 bp1"
+    "btn1 btn1 btn1 btn1 btn1 btn1 btn1 btn1 btn1 btn1 btn1 btn1"
+    "bp2 bp2 bp2 bp2 bp2 bp2 bp2 bp2 bp2 bp2 bp2 bp2"
+    "btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2 btn2"
+    "bp3 bp3 bp3 bp3 bp3 bp3 bp3 bp3 bp3 bp3 bp3 bp3"
+    "btn3 btn3 btn3 btn3 btn3 btn3 btn3 btn3 btn3 btn3 btn3 btn3"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+/* Contact Grid System */
+
+.c-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "chd chd chd chd chd chd chd chd chd chd chd chd"
+    "sctn sctn sctn sctn sctn sctn sctn sctn sctn sctn sctn sctn"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+/* Product Page Grid System */
+
+.p-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "left left left left left left right right right right right right"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+/* Accessories Page Grid System */
+
+.a-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "pd pd pd pd pd pd pd pd pd pd pd pd"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}

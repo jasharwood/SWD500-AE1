@@ -1,0 +1,120 @@
+.c-container {
+
+    /* Layout */
+
+    .c-heading {
+        grid-area: chd;
+    }
+
+    .section {
+        grid-area: sctn;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "form form form form form form form img img img img img";
+        margin-bottom: 4rem;
+    }
+
+    .form {
+        grid-area: form;
+        margin: 1rem;
+    }
+
+    .image {
+        grid-area: img;
+        overflow: hidden;
+        margin: .5rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Font */ 
+    .c-heading {
+        @include georgia-heading;
+        font-style: normal;
+        font-size: 2rem;
+        padding: 1rem 0 1rem 4rem;
+    }
+
+
+    /* Form */
+
+    .contact-form{
+        max-width: 90%;
+        margin: auto;
+        padding: 0 .5rem;
+        overflow: hidden;
+    }
+
+    .contact-form-text{
+        @include paragraph;
+        width: 100%;
+        margin: 1rem 0;
+        border: 0;
+        padding: 1rem .8rem;
+        outline: none;
+        transition: 0.5s;
+        font-size: .9rem;
+    }
+
+    .contact-form-text:focus{
+        box-shadow: 0 0 10px 4px lightgray;
+    }
+
+    /* Submit Button */
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0 auto;
+
+        .main-button {
+            padding: .8rem 2rem;
+        }
+    }
+
+    /* Image */
+
+    .cimg {
+        margin: 0;
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+/* Media Queries */ 
+
+/* Tablet */
+
+@media only screen and (max-width: 750px) {
+
+    .c-container {
+
+        .c-heading {
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .section {
+            grid-template-areas:
+            "form form form form form form form form form form form form"
+            "img img img img img img img img img img img img";
+        }
+
+        .form {
+            margin-bottom: 4rem;
+        }
+
+        .image {
+            display: none;
+        }
+
+        .button {
+            justify-content: center;
+        }
+
+    }
+}

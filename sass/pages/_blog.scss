@@ -1,0 +1,215 @@
+/* Heading Text */
+
+.b-heading {
+    grid-area: hd;
+    text-align: center;
+    margin: 2rem;
+
+    h1 {
+        @include georgia-heading;
+        font-style: normal;
+        font-weight: normal;
+    }
+}
+
+/* Layout */
+
+.blog-container {
+
+    .blog-post-1 {
+        grid-area: bp1;
+        margin: 3rem auto 1rem auto;
+        height: auto;
+        width: 90%;
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "bimg bimg bimg bimg btext btext btext btext btext btext btext btext";
+    }
+    
+    .blog-post-2 {
+        grid-area: bp2;
+        margin: 3rem auto 1rem auto;
+        height: auto;
+        width: 90%;
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "btext btext btext btext btext btext btext btext bimg bimg bimg bimg";
+    }
+    
+    .blog-post-3 {
+        grid-area: bp3;
+        margin: 3rem auto 1rem auto;
+        height: auto;
+        width: 90%;
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "bimg bimg bimg bimg btext btext btext btext btext btext btext btext";
+    }
+
+    .b-img {
+        grid-area: bimg;
+        overflow: hidden;
+        margin: .5rem 0 0 .5rem;
+        padding: 0;
+    }
+
+    #b-img-2 {
+        margin: .5rem .5rem 0 .5rem;
+    }
+
+    .b-text {
+        grid-area: btext;
+        padding: 2rem 1rem 1rem 1.5rem;
+    }
+
+    /* Buttons */
+
+    .blog-button-1 {
+        grid-area: btn1;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .blog-button-2 {
+        grid-area: btn2;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .blog-button-3 {
+        grid-area: btn3;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 3rem;
+    }
+    
+    /* Font Styles */
+    
+    .blog-title {
+        @include bold-heading;
+        font-size: 1.8rem;
+        padding: 1rem 0;
+    }
+    
+    .date {
+        @include paragraph;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    
+    .blog-snippet {
+        @include paragraph;
+        font-size: .9rem;
+    }
+    
+    /* Images */
+    
+    .blogimgs {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Media Queries */ 
+
+/* Tablet */
+
+@media only screen and (max-width: 750px) {
+
+    /* Layout */
+
+    .blog-container {
+
+        .blog-post-1 {
+            grid-template-areas:
+            "bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg" 
+            "btext btext btext btext btext btext btext btext btext btext btext btext";
+            width: 90%;
+        }
+    
+        .blog-post-2 {
+            grid-template-areas:
+            "bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg" 
+            "btext btext btext btext btext btext btext btext btext btext btext btext";
+        }
+    
+        .blog-post-3 {
+            grid-template-areas:
+            "bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg bimg" 
+            "btext btext btext btext btext btext btext btext btext btext btext btext";
+        }
+
+        .b-img {
+            margin: .5rem .5rem .5rem .5rem;
+            padding: 0;
+            text-align: center;
+        }
+
+        #b-img-2 {
+            margin: .5rem .5rem 1rem .5rem;
+        }
+
+        .b-text {
+            text-align: center;
+            padding: 1rem 1rem .8rem 1rem;
+        }
+
+        /* Images */
+
+        .blogimgs {
+            max-width: 50%;
+        }
+
+        /* Font */
+
+        .b-heading {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+        }
+
+        /* Buttons */
+
+        .blog-button-1 {
+            width: 90%;
+            justify-content: center;
+        }
+
+        .blog-button-2 {
+            width: 90%;
+            justify-content: center;
+        }
+
+        .blog-button-3 {
+            width: 90%;
+            justify-content: center;
+        }
+
+    }
+
+
+
+}

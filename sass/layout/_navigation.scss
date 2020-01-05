@@ -1,0 +1,144 @@
+/* Navigation */
+
+.nav {
+    grid-area: nav;
+    height: 3.5rem;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+    z-index: 2;
+
+    a {
+        @include logo;
+        text-decoration: none;
+        z-index: 2;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 2;
+
+        li {
+            display: inline;
+            padding-left: .5rem;
+            z-index: 2;
+        }
+
+        .cart-button {
+            img {
+                width: 1.7rem;
+                height: 1.7rem;
+                z-index: 2;
+            }
+        }
+
+        .menu-button img {
+            width: 1.5rem;
+            height: 1.5rem;
+            z-index: 2;
+        }
+    }
+}
+
+/* Sidebar */
+
+#sidebar {
+    margin: 0;
+    padding: 0;
+    padding-left: .5rem;
+    position: fixed;
+    width: 220px;
+    height: 60%;
+    background: black;
+    right: -220px;
+    top: 56px;
+    transition: all 500ms linear;
+    z-index: 2;
+    
+
+    ul {
+        margin: 0;
+        margin-top: .5rem;
+        padding-left: .5rem;
+
+        .shop {
+            margin: .5rem 0;
+        }
+
+        .more {
+            margin: .5rem 0;
+        }
+
+        .contact {
+            margin: .5rem 0;
+        }
+
+        p {
+            color: lightgray;
+            @include paragraph;
+            padding: .5rem .2rem;
+            letter-spacing: .3rem;
+        }
+
+        li {
+            color: white;
+            list-style: none;
+            padding: 0 .2rem;
+            
+
+            #home-link {
+                @include logo;
+                padding-left: .2rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                @include paragraph;
+                font-size: .9rem;
+                font-weight: 400;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+
+#sidebar.active {
+    right: 0;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 750px) {
+    
+    /* Navigation Tablet */ 
+    .nav {
+    
+        ul {
+
+            .cart-button img {
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+
+            .menu-button img {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    }
+}
+
+
+
+

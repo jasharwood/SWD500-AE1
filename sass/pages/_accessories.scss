@@ -1,0 +1,165 @@
+.a-container {
+
+    /* Heading Banner */
+
+    .a-header {
+        grid-area: hd;
+        width: 90%;
+        background: white;
+        text-align: center;
+        margin: 2rem auto;
+        padding: 1rem 0;
+
+        /* Title */ 
+
+        h1 {
+            @include georgia-heading;
+            font-style: normal;
+            font-size: 2rem;
+            padding: 2rem;
+        }
+
+        p {
+            @include paragraph;
+            padding: 0 2rem;
+            margin-bottom: 1rem;
+            font-size: .9rem;
+        }
+
+        /* Buttons */
+
+        .a-buttons {
+            margin: 0 auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            text-align: center;
+            width: 80%;
+            
+
+            .main-button {
+                width: 100%;
+            }
+        }
+    }
+
+    /* Products */
+
+    .products {
+        grid-area: pd;
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        grid-gap: 30px;
+        position: relative;
+
+        .product {
+            
+            .accessory-img {
+                width: 100%;
+            }
+
+            /* Product "View" Button */
+
+            .btn {
+                margin-top: .2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+                a .main-button {
+                    font-size: .7rem;
+                    padding: 0.6rem 1.2rem;
+                }
+            }
+        }
+
+        /* Product Title */
+
+        .a-title {
+            margin-top: 1rem;
+
+            .product-title {
+                @include paragraph;
+                font-size: .8rem;
+                margin-top: 1rem;
+            }
+        }
+
+        /* Product Price */
+
+        .product-price {
+            @include paragraph;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/* Media Queries */ 
+
+/* Tablet */
+
+@media only screen and (max-width: 750px) {
+
+    .a-container {
+
+        .products {
+            grid-template-columns: repeat(3, 1fr);
+
+            .product-price {
+                font-size: .9rem;
+            }
+        }
+
+        .a-header {
+
+            .a-buttons {
+                padding: 1rem;
+                width: 100%;
+                grid-gap: minmax(5px, 20px);
+                margin: 0 auto;
+
+                .main-button {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 500px) {
+
+    .a-container {
+
+        .products {
+            grid-template-columns: repeat(2, 1fr);
+
+
+            .product-price {
+                padding-top: .5rem;
+            }
+        }
+
+        .a-header {
+
+            .a-buttons {
+                padding: 1rem;
+                width: 100%;
+                margin: 0 auto;
+                grid-gap: 5px;
+
+                .main-button {
+                    font-size: .7rem;
+                    padding: 1rem .4rem;
+                }
+            }
+        }
+    }
+}

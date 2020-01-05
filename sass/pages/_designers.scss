@@ -1,0 +1,298 @@
+/* Heading Text */
+
+.d-heading {
+    grid-area: heading;
+    text-align: center;
+
+    h1 {
+        @include georgia-heading;
+        font-style: normal;
+        font-weight: normal;
+    }
+}
+
+
+/* Images */
+
+.designerimgs-left {
+    margin: 1rem;
+    max-width: 100%;
+    min-width: 230px;
+
+}
+
+.designerimgs-right {
+    margin: 1rem;
+    max-width: 100%;
+    min-width: 230px;
+
+}
+
+/* Section 1 */
+
+.d-section-1 {
+    margin: 5rem auto;
+    height: auto;
+    width: 80%;
+    background: white;
+    grid-area: ds1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: "img img img img text text text text text text text text";
+
+    .d-img {
+        grid-area: img;
+        overflow: hidden;
+    }
+
+    .d-text {
+        padding: 2rem 0 2rem 1.5rem;
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            @include georgia-heading;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            @include paragraph;
+            font-size: .8rem;
+            padding-top: .4rem;
+        }
+
+        p {
+            @include paragraph;
+            font-size: .9rem;
+            padding-right: 2rem;
+            padding-top: 3rem;
+        }
+    }
+
+}
+
+
+/* Section 2 */
+
+.d-section-2 {
+    margin: 5rem auto;
+    height: auto;
+    width: 80%;
+    background: white;
+    grid-area: ds2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "text text text text text text text text img img img img";
+
+    .d-img {
+        grid-area: img;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+
+    .d-text {
+        padding: 2rem 0 2rem 2rem;
+        grid-area: text;
+
+        h2 {
+            @include georgia-heading;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            @include paragraph;
+            font-size: .8rem;
+            padding-top: .4rem;
+        }
+
+        p {
+            @include paragraph;
+            font-size: .9rem;
+            padding-top: 3rem;
+            padding-right: 1rem;
+        }
+    }
+
+}
+
+/* Section 3 */
+
+.d-section-3 {
+    margin: 5rem auto;
+    height: auto;
+    width: 80%;
+    height: auto;
+    background: white;
+    grid-area: ds3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "img img img img text text text text text text text text";
+
+    .d-img {
+        grid-area: img;
+        overflow: hidden;
+    }
+
+    .d-text {
+        padding: 2rem 0 2rem 1.5rem;
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            @include georgia-heading;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            @include paragraph;
+            font-size: .8rem;
+            padding-top: .4rem;
+        }
+
+        p {
+            @include paragraph;
+            font-size: .9rem;
+            padding-right: 2rem;
+            padding-top: 3rem;
+        }
+    }
+
+}
+
+/* Section 4 */
+
+.d-section-4 {
+    margin: 5rem auto;
+    height: auto;
+    width: 80%;
+    background: white;
+    grid-area: ds4;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "text text text text text text text text img img img img";
+
+    .d-img {
+        grid-area: img;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+
+    .d-text {
+        padding: 2rem 0 2rem 2rem;
+        grid-area: text;
+
+        h2 {
+            @include georgia-heading;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            @include paragraph;
+            font-size: .8rem;
+            padding-top: .4rem;
+        }
+
+        p {
+            @include paragraph;
+            font-size: .9rem;
+            padding-top: 3rem;
+            padding-right: 1rem;
+        }
+    }
+
+}
+
+
+
+/* Media Queries */ 
+
+/* Tablet */
+
+@media only screen and (max-width: 750px) {
+
+    .designerimgs-left {
+        max-width: 60%;
+    }
+
+    .designerimgs-right {
+        max-width: 60%;
+    }
+
+    .d-section-1 {
+        margin: 2rem auto;
+        grid-template-areas: 
+        "text text text text text text text text text text text text"
+        "img img img img img img img img img img img img";
+
+        .d-img {
+            margin-right: 1rem;
+            text-align: center;
+        }
+    }
+
+    .d-section-2 {
+        margin: 2rem auto;
+        grid-template-areas: 
+        "text text text text text text text text text text text text"
+        "img img img img img img img img img img img img";
+
+        .d-img {
+            margin-right: 1rem;
+            text-align: center;
+        }
+
+        .d-text {
+            padding: 2rem 0 2rem 1.5rem;
+            p {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .d-section-3 {
+        margin: 2rem auto;
+        grid-template-areas: 
+        "text text text text text text text text text text text text"
+        "img img img img img img img img img img img img";
+
+        .d-img {
+            margin-right: 1rem;
+            text-align: center;
+        }
+    }
+
+    .d-section-4 {
+        margin: 2rem auto;
+        grid-template-areas: 
+        "text text text text text text text text text text text text"
+        "img img img img img img img img img img img img";
+
+        .d-img {
+            margin-right: 1rem;
+            text-align: center;
+        }
+
+        .d-text {
+            padding: 2rem 0 2rem 1.5rem;
+            p {
+                padding-right: 2rem;
+            }
+        }
+    }
+
+
+
+} 
