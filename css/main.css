@@ -1652,23 +1652,25 @@ body {
 }
 /* Mobile */
 @media only screen and (max-width: 340px) {
-  .options {
+  .p-container .options {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto 2rem auto;
   }
-  .options .select {
+  .p-container .options .select {
     margin: 0 auto;
     padding: 0;
     text-align: center;
   }
-  .options .select label select {
+  .p-container .options .select label select {
     margin: 1rem 0;
   }
-
-  .slides {
-    height: 20rem;
+  .p-container .left .slides {
+    height: 10rem;
+  }
+  .p-container .left .slides img {
+    width: 50%;
   }
 }
 .a-container {
